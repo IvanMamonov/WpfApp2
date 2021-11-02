@@ -25,5 +25,10 @@ namespace WpfApp2
             InitializeComponent();
             frame_auto_reg.NavigationService.Navigate(new Page_author());
         }
+
+        private void backBtn_Click(object sender, RoutedEventArgs e)
+        {
+            frame_auto_reg.NavigationService.GoBack();
+        }
     }
 }

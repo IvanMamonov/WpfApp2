@@ -86,7 +86,7 @@
     <Compile Include="page_reg.xaml.cs">
       <DependentUpon>page_reg.xaml</DependentUpon>
     </Compile>
-    <Compile Include="sysdiagrams.cs">
+    <Compile Include="Tables.cs">
       <DependentUpon>Bootcamp.tt</DependentUpon>
     </Compile>
     <Compile Include="Type.cs">
@@ -94,6 +94,12 @@
     </Compile>
     <Compile Include="Users.cs">
       <DependentUpon>Bootcamp.tt</DependentUpon>
+    </Compile>
+    <Compile Include="zakazfood.xaml.cs">
+      <DependentUpon>zakazfood.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="zakazpc.xaml.cs">
+      <DependentUpon>zakazpc.xaml</DependentUpon>
     </Compile>
     <Page Include="bron.xaml">
       <SubType>Designer</SubType>
@@ -116,6 +122,14 @@
       <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="page_reg.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="zakazfood.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="zakazpc.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
@@ -159,6 +173,11 @@
   </ItemGroup>
   <ItemGroup>
     <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="img\back.png" />
+    <Resource Include="img\gg.png" />
+    <Resource Include="img\pc.png" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="Bootcamp.Context.tt">

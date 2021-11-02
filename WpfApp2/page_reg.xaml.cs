@@ -27,7 +27,7 @@ namespace WpfApp2
         {
             InitializeComponent();
             types = new ObservableCollection<Type>(bd_connection.conection.Type.ToList());
-            var z = types[0].title;
+            
             //cnb_type.Items.Add(Type.);
             this.DataContext = this;
         }
@@ -48,11 +48,11 @@ namespace WpfApp2
             a.Fullname = name_txt.Text;
             a.login = login_txt.Text;
             a.password = password_txt.Text;
-            a.id_type = i;
+            a.id_type = 1;
             bd_connection.conection.Users.Add(a);
             bd_connection.conection.SaveChanges();
-            MessageBox.Show("all ok");
             NavigationService.GoBack();
+            NavigationService.Navigate(new bron());
         }
         private void cnb_position(object sender, SelectionChangedEventArgs e)
         {

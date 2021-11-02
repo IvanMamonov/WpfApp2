@@ -18,8 +18,9 @@ namespace WpfApp2
         public string Fullname { get; set; }
         public string login { get; set; }
         public string password { get; set; }
-        public Nullable<int> id_type { get; set; }
+        public int id_type { get; set; }
     
+        public virtual Tables Tables { get; set; }
         public virtual Type Type { get; set; }
     }
 }

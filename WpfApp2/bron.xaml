@@ -8,17 +8,18 @@
       d:DesignHeight="450" d:DesignWidth="800"
       Title="bron">
 
-    <Grid>
+    <Grid Margin="-116,0,-212,-142">
         <Grid.ColumnDefinitions>
             <ColumnDefinition/>
             <ColumnDefinition/>
         </Grid.ColumnDefinitions>
         <Grid.RowDefinitions>
-            <RowDefinition/>
-            <RowDefinition/>
-            <RowDefinition/>
-            <RowDefinition/>
+            <RowDefinition Height="200*"/>
+            <RowDefinition Height="64*"/>
         </Grid.RowDefinitions>
-        
+        <Image MouseDown="TextBlock_MouseDown_1" x:Name="ExhImg" Source="img\pc.png" Grid.Row="0" Stretch="UniformToFill" Grid.Column="0"/>
+        <TextBlock MouseDown="TextBlock_MouseDown_1" Text="Выбрать стол" Grid.Row="1" VerticalAlignment="Center" HorizontalAlignment="Center" FontSize="40" Foreground="White" FontWeight="Bold" Grid.Column="0"/>
+        <Image MouseDown="TextBlock_MouseDown" x:Name="Food" Source="img\gg.png" Grid.Row="0" Stretch="UniformToFill" Grid.Column="1"/>
+        <TextBlock  MouseDown="TextBlock_MouseDown" Text="Выбрать еду" Grid.Row="1" VerticalAlignment="Center" HorizontalAlignment="Center" FontSize="40" Foreground="White" FontWeight="Bold" Grid.Column="1"/>
     </Grid>
 </Page>
