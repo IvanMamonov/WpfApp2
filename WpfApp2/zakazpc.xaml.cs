@@ -22,7 +22,7 @@ namespace WpfApp2
     public partial class zakazpc : Page
     {
         public static ObservableCollection<Tables> types { get; set; }
-        int g { get; set; }
+        string g { get; set; }
         public zakazpc()
         {
             InitializeComponent();
@@ -33,7 +33,9 @@ namespace WpfApp2
         private void id_tables_SelectionChanged(object sender, SelectionChangedEventArgs e)
         {
             var a = (sender as ComboBox).SelectedItem as Tables;
+            g = a.vid;
             
         }
+
     }
 }
