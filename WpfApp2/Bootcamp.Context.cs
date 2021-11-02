@@ -13,10 +13,10 @@ namespace WpfApp2
     using System.Data.Entity;
     using System.Data.Entity.Infrastructure;
     
-    public partial class BootcampEntities : DbContext
+    public partial class BootcampEntities3 : DbContext
     {
-        public BootcampEntities()
-            : base("name=BootcampEntities")
+        public BootcampEntities3()
+            : base("name=BootcampEntities3")
         {
         }
     
@@ -25,8 +25,8 @@ namespace WpfApp2
             throw new UnintentionalCodeFirstException();
         }
     
-        public virtual DbSet<sysdiagrams> sysdiagrams { get; set; }
-        public virtual DbSet<Users> Users { get; set; }
+        public virtual DbSet<Tables> Tables { get; set; }
         public virtual DbSet<Type> Type { get; set; }
+        public virtual DbSet<Users> Users { get; set; }
     }
 }

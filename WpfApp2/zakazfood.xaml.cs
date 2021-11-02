@@ -16,23 +16,13 @@ using System.Windows.Shapes;
 namespace WpfApp2
 {
     /// <summary>
-    /// Логика взаимодействия для bron.xaml
+    /// Логика взаимодействия для zakazfood.xaml
     /// </summary>
-    public partial class bron : Page
+    public partial class zakazfood : Page
     {
-        public bron()
+        public zakazfood()
         {
             InitializeComponent();
-        }
-
-        private void TextBlock_MouseDown(object sender, MouseButtonEventArgs e)
-        {
-            NavigationService.Navigate(new zakazfood());
-        }
-
-        private void TextBlock_MouseDown_1(object sender, MouseButtonEventArgs e)
-        {
-            NavigationService.Navigate(new zakazpc());
         }
     }
 }

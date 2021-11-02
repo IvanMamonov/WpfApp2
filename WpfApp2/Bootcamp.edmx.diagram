@@ -4,11 +4,12 @@
   <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
     <!-- Diagram content (shape and connector positions) -->
     <edmx:Diagrams>
-      <Diagram DiagramId="ba3df12e242c46dbaad88846df867f9d" Name="Diagram1">
-        <EntityTypeShape EntityType="BootcampModel.sysdiagrams" Width="1.5" PointX="0.75" PointY="0.75" IsExpanded="true" />
-        <EntityTypeShape EntityType="BootcampModel.Users" Width="1.5" PointX="2.75" PointY="0.75" IsExpanded="true" />
-        <EntityTypeShape EntityType="BootcampModel.Type" Width="1.5" PointX="0.75" PointY="4" />
-        <AssociationConnector Association="BootcampModel.FK_Users_Type" />
+      <Diagram DiagramId="12bd07a0469d40b9b7c52cb1efe347fb" Name="Diagram1">
+        <EntityTypeShape EntityType="BootcampModel.Tables" Width="1.5" PointX="0.75" PointY="1" IsExpanded="true" />
+        <EntityTypeShape EntityType="BootcampModel.Type" Width="1.5" PointX="0.75" PointY="5.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="BootcampModel.Users" Width="1.5" PointX="3" PointY="1" IsExpanded="true" />
+        <AssociationConnector Association="BootcampModel.FK_Users_tables" ManuallyRouted="false" />
+        <AssociationConnector Association="BootcampModel.FK_Users_Type" ManuallyRouted="false" />
       </Diagram>
     </edmx:Diagrams>
   </edmx:Designer>

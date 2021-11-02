@@ -5,7 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:WpfApp2"
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="800">
+        Title="MainWindow">
     <Window.Resources>
         <Style TargetType="Button">
             <Setter Property="Background" Value="#FFD60046"></Setter>
@@ -23,6 +23,7 @@
             <RowDefinition/>
         </Grid.RowDefinitions>
         <StackPanel Grid.Row="1" Grid.Column="1" Background="#FFD60046">
+            <Button x:Name="backBtn" Width="30" Height="30" HorizontalAlignment="Left" Background="White" Click="backBtn_Click" Content="&lt;"/>
             <Frame x:Name="frame_auto_reg" NavigationUIVisibility="Hidden" Height="300" Width="500"/>
         </StackPanel>
     </Grid>

@@ -34,7 +34,7 @@ namespace WpfApp2
             var z = users.Where(s => s.login == txt_login.Text && s.password == txt_passwors.Password).FirstOrDefault();
             if (z != null)
             {
-                MessageBox.Show(z.Fullname);
+                NavigationService.Navigate(new bron());
             }
             else
             {

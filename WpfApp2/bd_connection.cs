@@ -8,6 +8,6 @@ namespace WpfApp2
 {
     class bd_connection
     {
-        public static BootcampEntities conection = new BootcampEntities();
+        public static BootcampEntities3 conection = new BootcampEntities3();
     }
 }

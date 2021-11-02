@@ -19,14 +19,14 @@
             <RowDefinition/>
             <RowDefinition/>
         </Grid.RowDefinitions>
-        <TextBlock Text="Authorization" FontSize="37" Grid.ColumnSpan="2" TextAlignment="Center"/>
-        <TextBlock Text="Login" FontSize="20" Grid.Column="0" Grid.Row="1" TextAlignment="Center"/>
-        <TextBlock Text="password" FontSize="20" Grid.Column="0" Grid.Row="2" TextAlignment="Center"/>
+        <TextBlock Text="Авторизация" FontSize="60" Grid.ColumnSpan="2" TextAlignment="Center"  Foreground="White" FontWeight="Bold"/>
+        <TextBlock Text="Логин" FontSize="40" Grid.Column="0" Grid.Row="1" TextAlignment="Center"  Foreground="White" FontWeight="Bold"/>
+        <TextBlock Text="Пароль" FontSize="40" Grid.Column="0" Grid.Row="2" TextAlignment="Center"  Foreground="White" FontWeight="Bold"/>
         <TextBox x:Name="txt_login" Grid.Row="1" Grid.Column="1" Width="200" Height="30"/>
         <PasswordBox x:Name="txt_passwors" Grid.Row="2" Grid.Column="1" Width="200" Height="30"/>
         <StackPanel Grid.Column="0" Grid.ColumnSpan="2" Grid.Row="5" Orientation="Horizontal" HorizontalAlignment="Center" VerticalAlignment="Center" Margin="10">
-            <Button Content="log in" Padding="10" Click="Button_Click_1" Margin="10"/>
-            <Button Content="reg" Padding="10" Margin="10" Click="Button_Click"/>
+            <Button Content="Войти" Padding="10" Click="Button_Click_1" Margin="10"/>
+            <Button Content="Регистрация" Padding="10" Margin="10" Click="Button_Click"/>
         </StackPanel>
     </Grid>
 </Page>
